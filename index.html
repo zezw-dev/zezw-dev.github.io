@@ -66,7 +66,7 @@
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="../My_Website/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                    <a href="My_Website/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
                 </div>
 
                 <!-- المشروع الثاني -->
@@ -92,7 +92,7 @@
                         <span>CSS3</span>
                         <span>JS Logic</span>
                     </div>
-                    <a href="../Price_Calculator/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                    <a href="Price_Calculator/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
                 </div>
 
                 <!-- المشروع الرابع -->
@@ -106,20 +106,20 @@
                         <span>JavaScript</span>
                         <span>Fetch API</span>
                     </div>
-                    <a href="../Currency_Converter/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                    <a href="Currency_Converter/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- قسم التواصل -->
+    <!-- قسم التواصل المباشر المرتبط ببريدك -->
     <section id="contact" class="container">
         <h2 class="section-title">لنبني مشروعك القادم معاً</h2>
-        <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="اسمك الكريم" required>
-            <input type="email" placeholder="بريدك الإلكتروني" required>
-            <textarea rows="4" placeholder="أخبرني عن تفاصيل موقعك..." required></textarea>
+        <form class="contact-form" action="https://formspree.io" method="POST">
+            <input type="text" name="name" placeholder="اسمك الكريم" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <textarea name="message" rows="4" placeholder="أخبرني عن تفاصيل موقعك..." required></textarea>
             <button type="submit" class="btn">إرسال الرسالة</button>
         </form>
     </section>
