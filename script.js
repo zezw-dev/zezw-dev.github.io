@@ -18,13 +18,20 @@ if (contactForm) {
         submitBtn.textContent = "جاري الإرسال...";
         submitBtn.disabled = true;
 
+        const formData = {
+            name: contactForm.querySelector('[name="name"]').value,
+            email: contactForm.querySelector('[name="email"]').value,
+            message: contactForm.querySelector('[name="message"]').value
+        };
+
         try {
             const response = await fetch("https://formspree.io", {
                 method: "POST",
-                body: new FormData(contactForm),
                 headers: {
+                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                }
+                },
+                body: JSON.stringify(formData)
             });
 
             if (response.ok) {
