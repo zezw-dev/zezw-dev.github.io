@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEZW | مطور واجهات الويب (Front-End Developer)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>&lt;/&gt;</span> ZEZW</a>
+                <button class="menu-btn" id="menuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#skills">مهاراتي</a></li>
+                    <li><a href="#projects">أعمالي</a></li>
+                    <li><a href="#contact">تواصل معي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <span class="badge">🟢 متاح للعمل الحر والمشاريع</span>
+            <h1>أهلاً، أنا ZEZW</h1>
+            <p>مطور واجهات أمامية (Front-End Developer) متخصص في تحويل الأفكار إلى مواقع ويب سريعة، عصرية، ومتجاوبة مع جميع الشاشات.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">استكشف أعمالي</a>
+                <a href="#contact" class="btn btn-outline">اطلب مشروعك</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات التقنية -->
+    <section id="skills" class="container">
+        <h2 class="section-title">مهاراتي التقنية</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3 & Flexbox/Grid</div>
+            <div class="skill-card">JavaScript (ES6+)</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">UI/UX Implementation</div>
+            <div class="skill-card">Fetch API & LocalStorage</div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال (4 مشاريع متكاملة) -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">معرض أعمالي</h2>
+            <div class="projects-grid">
+
+                <!-- المشروع الأول -->
+                <div class="project-card">
+                    <div class="project-tag">موقع شركة + متجر</div>
+                    <h3>منصة نُخبة ويب</h3>
+                    <p>موقع متكامل لشركة برمجيات يضم شريط تنقل متجاوب، الوضع الليلي، وسلة مشتريات تفاعلية تحسب الإجمالي.</p>
+                    <div class="tech-used">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="../My_Website/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                </div>
+
+                <!-- المشروع الثاني -->
+                <div class="project-card">
+                    <div class="project-tag">معرض أعمال شخصي</div>
+                    <h3>معرض أعمال ZEZW</h3>
+                    <p>منصة تعريفية لعرض المهارات والمشاريع البرمجية بهيكلة ملفات احترافية منفصلة وتصميم عصري.</p>
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <a href="#hero" class="btn" style="margin-top: 15px; display: inline-block;">أنت تتصفحه الآن</a>
+                </div>
+
+                <!-- المشروع الثالث -->
+                <div class="project-card">
+                    <div class="project-tag">أداة تفاعلية</div>
+                    <h3>حاسبة تكلفة المواقع</h3>
+                    <p>أداة ذكية لحساب تكلفة ومدة تنفيذ المواقع تلقائياً بناءً على نوع الموقع وعدد الصفحات والميزات الإضافية.</p>
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS Logic</span>
+                    </div>
+                    <a href="../Price_Calculator/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                </div>
+
+                <!-- المشروع الرابع -->
+                <div class="project-card">
+                    <div class="project-tag">تطبيق مالي ذكي</div>
+                    <h3>محول العملات اللحظي</h3>
+                    <p>تطبيق لجلب أسعار الصرف الحية وتحويل العملات العالمية لحظياً باستخدام Fetch API مع نظام عمل احتياطي.</p>
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Fetch API</span>
+                    </div>
+                    <a href="../Currency_Converter/index.html" class="btn" style="margin-top: 15px; display: inline-block;" target="_blank">معاينة المشروع</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="container">
+        <h2 class="section-title">لنبني مشروعك القادم معاً</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="اسمك الكريم" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea rows="4" placeholder="أخبرني عن تفاصيل موقعك..." required></textarea>
+            <button type="submit" class="btn">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>تم التصميم والبرمجة بواسطة ZEZW &copy; 2026</p>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
