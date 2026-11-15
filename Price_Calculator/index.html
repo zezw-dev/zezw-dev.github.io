@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEZW | حاسبة تكلفة المواقع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-container">
+        <header class="calc-header">
+            <span class="brand">ZEZW &lt;/&gt;</span>
+            <h1>حاسبة تكلفة موقعك</h1>
+            <p>اختر مواصفات مشروعك واحصل على تقدير فوري للتكلفة ومدة التنفيذ</p>
+        </header>
+
+        <div class="form-section">
+            <label class="section-label">1. نوع الموقع المطلوب:</label>
+            <select id="siteType" class="select-box">
+                <option value="80">موقع تعريفي لشركة ($80)</option>
+                <option value="120">معرض أعمال شخصي ($120)</option>
+                <option value="250">متجر إلكتروني متكامل ($250)</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <div class="range-header">
+                <label class="section-label">2. عدد الصفحات:</label>
+                <span class="pages-badge"><span id="pagesCount">1</span> صفحات</span>
+            </div>
+            <input type="range" id="pagesRange" min="1" max="15" value="1" class="slider">
+            <small class="hint">تُضاف $15 لكل صفحة إضافية بعد الصفحة الأولى</small>
+        </div>
+
+        <div class="form-section">
+            <label class="section-label">3. ميزات إضافية احترافية:</label>
+            <label class="checkbox-item">
+                <input type="checkbox" class="addon" value="30">
+                <span>تفعيل الوضع الليلي (Dark Mode) (+$30)</span>
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" class="addon" value="40">
+                <span>تهيئة محركات البحث (SEO) (+$40)</span>
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" class="addon" value="50">
+                <span>تسليم سريع خلال 48 ساعة (+$50)</span>
+            </label>
+        </div>
+
+        <div class="result-box">
+            <div class="result-item">
+                <span>التكلفة التقديرية:</span>
+                <strong class="total-price">$<span id="totalPrice">80</span></strong>
+            </div>
+            <div class="result-item">
+                <span>مدة التنفيذ المتوقعة:</span>
+                <strong id="estDays">3 أيام</strong>
+            </div>
+            <button class="btn" id="orderBtn">اعتماد العرض وطلب التنفيذ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
