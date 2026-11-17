@@ -170,3 +170,12 @@ header p {
     border-color: #ef4444;
     color: #ef4444;
 }
+.input-group {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+.input-group input {
+    flex: 1;
+    min-width: 0;
+}
