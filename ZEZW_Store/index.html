@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEZW | Luxury Fashion & Lookbook</title>
+  <link rel="stylesheet" href="style.css?v=20">
+</head>
+<body>
+
+  <!-- الدخلة السينمائية -->
+  <div id="intro" class="intro-wrapper">
+    <div class="curtain top"></div>
+    <div class="curtain bottom"></div>
+    <div class="intro-content">
+      <div class="intro-badge">EXCLUSIVE COLLECTION</div>
+      <h1 class="intro-title">ZEZW</h1>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- الشريط العلوي -->
+  <header class="navbar">
+    <div class="logo">ZEZW <span>STUDIO</span></div>
+    <button class="cart-trigger" onclick="openCartModal()">
+      السلة (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="main-grid">
+    <section class="showcase">
+      <div class="title-box">
+        <span class="eyebrow">SEASON 2026</span>
+        <h2>Try the Look.</h2>
+        <p>اختر الإطلالة لاستعراض القطع وتنسيقها بالكامل</p>
+      </div>
+      <div id="looksContainer" class="looks-grid"></div>
+    </section>
+
+    <aside class="look-details">
+      <div class="details-head">
+        <span>In this look</span>
+        <strong id="activeLookName">إطلالة 01</strong>
+      </div>
+      <div id="piecesList" class="pieces-list"></div>
+      <div class="details-foot">
+        <div class="price-summary">
+          <span>إجمالي الإطلالة:</span>
+          <strong id="lookPrice">0 ج.م</strong>
+        </div>
+        <button class="btn-luxury" onclick="addFullLook()">إضافة الإطلالة للسلة +</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- نافذة السلة المنبثقة -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-box">
+      <div class="cart-head">
+        <h3>سلة المشتريات</h3>
+        <button class="close-btn" onclick="closeCartModal()">✕</button>
+      </div>
+      <div id="cartItemsList" class="cart-body"></div>
+      <div class="cart-foot">
+        <div class="price-summary">
+          <span>الإجمالي الكلي:</span>
+          <strong id="cartTotalPrice">0 ج.م</strong>
+        </div>
+        <button class="btn-luxury" onclick="sendOrderWhatsApp()">إتمام الطلب عبر واتساب</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=21"></script>
+</body>
+</html>
